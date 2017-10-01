@@ -1,0 +1,108 @@
+/**
+ * AVG Runtime
+ *
+ * @author NekoTora <i@flag.moe>
+ * @author Rakuem Hayashi <i@fake.moe>
+ * @copyright 2015 NekoTora & Rakume
+ */
+
+
+@charset 'UTF-8';
+
+
+.effectlayer
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 23333;
+
+    transition: all .3s ease;
+    pointer-events: none;
+}
+
+.avgplayer{
+    transition: all .3s ease;
+}
+
+.avgplayer *{
+    transition: none !important;
+}
+
+.avgplayer p
+{
+    line-height: 2em;
+}
+
+.avgplayer .selector
+{
+    display: inline-block;
+
+    padding-left: .6em;
+}
+
+.avgplayer .selector a
+{
+    display: inline-block;
+
+    margin-left: .5em;
+
+    color: #fff;
+    animation: opition .5s ease infinite alternate .3s;
+    -moz-animation: opition .5s ease infinite alternate .3s;
+    -ms-animation: opition .5s ease infinite alternate .3s;
+    -webkit-animation: opition .5s ease infinite alternate .3s;
+    -o-animation: opition .5s ease infinite alternate .3s;
+}
+
+.avgplayer .selector a:hover
+{
+    opacity: .8;
+}
+
+@keyframes opition /* Safari 和 Chrome */
+{
+from {margin-left: .5em;}
+to {margin-left: 1em;}
+}
+
+@-moz-keyframes opition /* Safari 和 Chrome */
+{
+from {margin-left: .5em;}
+to {margin-left: 1em;}
+}
+
+@-ms-keyframes opition /* Safari 和 Chrome */
+{
+from {margin-left: .5em;}
+to {margin-left: 1em;}
+}
+
+@-webkit-keyframes opition /* Safari 和 Chrome */
+{
+from {margin-left: .5em;}
+to {margin-left: 1em;}
+}
+
+@-o-keyframes opition /* Safari 和 Chrome */
+{
+from {margin-left: .5em;}
+to {margin-left: 1em;}
+}
+
+
+
+.effect_flash{
+    -webkit-animation: flash .5s ease;
+}
+
+@-webkit-keyframes flash
+{
+0% {background: rgba(255,255,255,.0);}
+30% {background: rgba(255,255,255,.5);}
+50% {background: rgba(255,255,255,.2);}
+70% {background: rgba(255,255,255,.5);}
+100% {background: rgba(255,255,255,.0);}
+}

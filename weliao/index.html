@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"/>
+    <title>WeLiao-另一种生活方式！</title>
+
+    <!-- HTML5 element  -->
+    <script src="./demo/javascript/dist/browser-polyfill.min.js"></script>
+</head>
+<body>
+<section id='main' class='w100'>
+    <article id='demo'></article>
+    <article id='components'></article>
+</section>
+<!--config-->
+<script src="./demo/javascript/dist/webim.config.js"></script>
+<script>
+        <!--A JavaScript library for XMPP over Websocket-->
+        document.write("<script src='./sdk/dist/strophe-1.2.8.min.js'><\/script>");
+</script>
+<!--sdk-->
+<script src='./sdk/dist/websdk-1.4.11.js'></script>
+<!--webrtc-->
+<script>
+    if (WebIM.config.isWebRTC) {
+        document.write("<script src='./webrtc/dist/adapter.js'><\/script>");
+        document.write("<script src='./webrtc/dist/webrtc-1.4.11.js'><\/script>");
+    }
+</script>
+<!--[if lte IE 9]>
+<script src="./demo/javascript/dist/swfupload/swfupload.min.js"></script>
+<![endif]-->
+<!--demo javascript-->
+<script src="./demo/javascript/dist/demo-1.4.11.js"></script>
+<div>
+                <div class="footer-develop-div">Powered by <a href="http://www.weibo.com/DSTansice" target="_blank" class="footer-develop-a">TANS</a></div>
+                <div class="footer-develop-div">Theme - <a href="http://tans.cf" target="_blank" class="footer-develop-a">TANS博客</a></div>
+            </div>
+</body>
+</html>

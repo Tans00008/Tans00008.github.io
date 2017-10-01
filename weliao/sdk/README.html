@@ -1,0 +1,105 @@
+<h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><h2 id="v1-4-11-2017-06-07"><a href="#v1-4-11-2017-06-07" class="headerlink" title="v1.4.11 @ 2017-06-07"></a>v1.4.11 @ 2017-06-07</h2><p>###Feature</p>
+<ul>
+<li>[sdk] debug.js fused to sdk logs output optimized</li>
+<li>[sdk] Block groups through rest api</li>
+<li>[sdk] Apply for appending groups through rest api</li>
+<li>[sdk] Get groups list through rest api</li>
+<li>[sdk] Get a group detail through rest api</li>
+<li>[sdk] List all groups a user in through rest api</li>
+<li>[sdk] List all of a group’s members through rest api</li>
+<li>[sdk] Block member in group through rest api</li>
+<li>[sdk] Unblock member in group through rest api</li>
+<li>[sdk] List all of administrators in a group through rest api</li>
+<li>[sdk] List blocked members in a group through rest api</li>
+<li>[sdk] Set members as administrator in a group through rest api</li>
+<li>[sdk] Delete an administrator in a group through rest api</li>
+<li>[sdk] Agree a user’s application filings of join in the group through rest api</li>
+<li>[sdk] Reject a user’s application filings of join in the group through rest api</li>
+<li>[sdk] Add a single user in a group to the blacklist of this group through rest api</li>
+<li>[sdk] Add multi of users in a group to the blacklist of this group through rest api</li>
+<li>[sdk] Delete a single user in a group from the blacklist of this group through rest api</li>
+<li>[sdk] Delete multi of users in a group from the blacklist of this group through rest api</li>
+<li>[demo] Chat record can be deleted</li>
+<li>[demo] Show status of chat records(Undelivered, delivered, read) </li>
+<li>[demo] List members in a chat room</li>
+<li>[demo] Open a dialog window with friends just through a link</li>
+<li>[demo] Add the board apply for join in a group</li>
+<li>[demo] In the apply for join in a group board get pages of public groups while scroll to the bottom</li>
+<li>[demo] Click a group’s name will show detail information of this group on the apply for join in a group board</li>
+<li>[demo] Search a group by the group’s id will show detail information of this group on the apply for join in a group board</li>
+<li>[demo] Users are be able to apply for join in a group on the apply for join in a group board</li>
+<li>[demo] Group owners are able to agree or reject a user’s filings of join in the group</li>
+<li>[demo] Add the add/delete administrator and block/unblock members buttons in the group members list</li>
+</ul>
+<p>###BugFix</p>
+<ul>
+<li>[sdk] Add a new friend will create spare subscription information</li>
+<li>[sdk] Send messages continually will cause the problem of message id repetition</li>
+<li>[sdk] Adapt size of pictures whild sdk and webim sending pictures to each other </li>
+<li>[demo] Optimize sdk/demo.html, fix the problem that some of dependent files can’t be found</li>
+<li>[demo] Fix the problem that off-line messages count not right</li>
+</ul>
+<h2 id="v1-4-10-2017-02-16"><a href="#v1-4-10-2017-02-16" class="headerlink" title="v1.4.10 @ 2017-02-16"></a>v1.4.10 @ 2017-02-16</h2><h3 id="Feature"><a href="#Feature" class="headerlink" title="Feature"></a>Feature</h3><ul>
+<li>[sdk] webrtc add voice call</li>
+</ul>
+<h3 id="BugFix"><a href="#BugFix" class="headerlink" title="BugFix"></a>BugFix</h3><ul>
+<li>[sdk] webrtc:Firefox error while close call</li>
+<li>[sdk] webrtc:logical error after multitimes connection and close</li>
+<li>[sdk] webrtc:shoud not warning offline after normal close</li>
+<li>[sdk] webrtc:can’t handle IQ message after reconnect</li>
+</ul>
+<h2 id="v1-4-9-2017-01-20"><a href="#v1-4-9-2017-01-20" class="headerlink" title="v1.4.9 @ 2017-01-20"></a>v1.4.9 @ 2017-01-20</h2><h3 id="BugFix-1"><a href="#BugFix-1" class="headerlink" title="BugFix"></a>BugFix</h3><ul>
+<li>[sdk] fix a bug in success/error callback</li>
+</ul>
+<h2 id="v1-4-8-2016-12-27"><a href="#v1-4-8-2016-12-27" class="headerlink" title="v1.4.8 @ 2016-12-27"></a>v1.4.8 @ 2016-12-27</h2><h3 id="Feature-1"><a href="#Feature-1" class="headerlink" title="Feature"></a>Feature</h3><ul>
+<li>[demo] Add a mute button to the video chat window</li>
+<li>[demo] Create a chat window automaticly</li>
+<li>[demo] Hide the chat window when switch a cate in leftbar</li>
+<li>[demo] Not back to the login page when refresh the webpage if login succeed</li>
+</ul>
+<h3 id="BugFix-2"><a href="#BugFix-2" class="headerlink" title="BugFix"></a>BugFix</h3><ul>
+<li>[sdk] Remove all of the log methods</li>
+<li>[sdk] Send an unavailable presence stanza when leave a group</li>
+</ul>
+<h2 id="v1-4-7-2016-12-21"><a href="#v1-4-7-2016-12-21" class="headerlink" title="v1.4.7 @ 2016-12-21"></a>v1.4.7 @ 2016-12-21</h2><h3 id="Feature-2"><a href="#Feature-2" class="headerlink" title="Feature"></a>Feature</h3><ul>
+<li>[demo] Add video chat and send video file functions into the demo.html</li>
+</ul>
+<h3 id="BugFix-3"><a href="#BugFix-3" class="headerlink" title="BugFix"></a>BugFix</h3><ul>
+<li>[sdk] Fix the bug when the browser runs in back end that WebIM can’t reconnect on phones</li>
+<li>[demo] Refresh the group list on the front end after create a group succeed on back end</li>
+<li>[demo] The master of a group and the members will be added will receive a notification when add members to group</li>
+<li>[demo] A member will leave group when the master of the group remove this member from group black list</li>
+</ul>
+<h2 id="v1-4-6"><a href="#v1-4-6" class="headerlink" title="v1.4.6"></a>v1.4.6</h2><h3 id="Feature-3"><a href="#Feature-3" class="headerlink" title="Feature"></a>Feature</h3><ul>
+<li>add demo.html</li>
+</ul>
+<h3 id="BugFix-4"><a href="#BugFix-4" class="headerlink" title="BugFix"></a>BugFix</h3><ul>
+<li>to decoupling from Demo namespaces, delete codes using Demo</li>
+<li>delete connection.prototype.createRoom, which is not supported by server</li>
+</ul>
+<h2 id="v1-4-5"><a href="#v1-4-5" class="headerlink" title="v1.4.5"></a>v1.4.5</h2><h3 id="Feature-4"><a href="#Feature-4" class="headerlink" title="Feature"></a>Feature</h3><ul>
+<li>GNU version number: <code>Major_Version_Number.Minor_Version_Number.Revision_Number</code></li>
+<li>support webrtc</li>
+<li>while http access,use ip directly instead of ServerName,avoid DNS hijacking.  <code>isHttpDNS:true</code></li>
+</ul>
+<h3 id="BugFix-5"><a href="#BugFix-5" class="headerlink" title="BugFix"></a>BugFix</h3><ul>
+<li>does not update catact list UI after destory group</li>
+<li>does not call the callback function after send out the cmd message</li>
+</ul>
+<h2 id="1-1-4"><a href="#1-1-4" class="headerlink" title="1.1.4"></a>1.1.4</h2><ul>
+<li>add browser version support umd</li>
+<li>remove strophe from sdk because it’t too big for webpack or other compiler</li>
+</ul>
+<h1 id="How-to-install"><a href="#How-to-install" class="headerlink" title="How to install"></a>How to install</h1><p>npm install easemob-webim –save</p>
+<pre><code>require(&apos;easemob-websdk&apos;);
+</code></pre><pre><code>Demo.conn = new WebIM.connection({
+    isMultiLoginSessions: WebIM.config.isMultiLoginSessions,
+    https: typeof WebIM.config.https === &apos;boolean&apos; ? WebIM.config.https : location.protocol === &apos;https:&apos;,
+    url: WebIM.config.xmppURL,
+    isAutoLogin: false,
+    heartBeatWait: WebIM.config.heartBeatWait,
+    autoReconnectNumMax: WebIM.config.autoReconnectNumMax,
+    autoReconnectInterval: WebIM.config.autoReconnectInterval
+});
+</code></pre><h1 id="How-to-release"><a href="#How-to-release" class="headerlink" title="How to release"></a>How to release</h1><p>npm install</p>
+<p>npm run build</p>

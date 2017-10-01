@@ -1,0 +1,400 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	background: #000;
+	color: #fff;
+    height: 100%;
+	width: 100%;
+	font-size: 15px;
+	line-height: 2em;
+	font-family: Ubuntu, "Helvetica Neue", Helvetica, "Nimbus Sans L", "Open Sans", "Roboto", "Segoe WP", "Segoe UI", arial, "Liberation Sans", freesans, clean, "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans CJK TC", "Source Han Sans TW", "Noto Sans CJK JP", "Source Han Sans JP", "Noto Sans CJK", "Source Han Sans", "Microsoft YaHei UI", "Microsoft YaHei", DengXian, "Wenquanyi Micro Hei", "ST Heiti", "Droid Sans Fallback", "Microsoft JhengHei", SimSun, sans-serif;
+}
+
+::selection{
+	background:rgba(255,255,255,.25);
+}
+
+.clear:after{
+  content:"";
+  display:block;
+  height:0;
+  visibility:hidden;
+  clear:both;
+}
+
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+abbr{
+	border-bottom: 1px dashed rgba(255,255,255,.7);
+}
+
+del{
+	opacity: .5;
+}
+
+.background{
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0%;
+	width: 100%;
+	height: auto;
+}
+
+.nav{
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+	z-index: 6;
+	opacity: .75;
+}
+
+.nav:hover{
+	opacity: 1;
+}
+
+.nav .linkbox{
+	float: right;
+}
+
+.nav a{
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	padding: 0 .8em 0 1em;
+	position: relative;
+}
+
+.nav a:before{
+	display: inline-block;
+	content: "";
+	width: 5px;
+	height: 5px;
+	border-radius: 100%;
+	background: #fff;
+	margin-right: 7px;
+	vertical-align: text-top;
+}
+
+.nav .me{
+	position: relative;
+	top: 0;
+	display: block;
+	text-align: right;
+	padding-bottom: 25px;
+	transition: all .3s ease;
+}
+
+.nav .me h3{
+	font-size: 25px;
+	font-weight: normal;
+	padding-top: 16px;
+	padding-bottom: 2px;
+}
+
+.nav .me p{
+	font-size: 13px;
+}
+
+.nav .me img{
+	width: 75px;
+	height: 75px;
+	float: right;
+	border-radius: 100%;
+	margin-left: 20px;
+	padding: 4px;
+	border: 2px #fff solid;
+}
+
+.onfirst .me{
+	opacity: 0;
+	top: 15px;
+}
+
+.nav a:hover:after {
+	left: 0;
+	width: 100%;
+	-webkit-transition: width 350ms;
+	-moz-transition: width 350ms;
+	transition: width 350ms;
+}
+
+.nav a:after {
+	content: "";
+	position: absolute;
+	border-bottom: 1px solid #fff;
+	bottom: -5px;
+	left: 100%;
+	width: 0;
+	-webkit-transition: width 350ms,left 350ms;
+	-moz-transition: width 350ms,left 350ms;
+	transition: width 350ms,left 350ms;
+}
+
+.main{
+	position: relative;
+	z-index: 5;
+	color: #fff;
+}
+
+.main .ch{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.main .ch .inner{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10% 10% 15% 10%;
+}
+
+.main .ch .inner h2.chtitle{
+	font-size: 60px;
+	line-height: 1em;
+	padding-bottom: .8em;
+	font-weight: lighter;
+	font-family: "Segoe UI Light",  "Segoe Light",  "Segoe", Ubuntu, "Helvetica Neue", Helvetica, "Nimbus Sans L", "Open Sans", "Roboto", "Segoe WP",  arial, "Liberation Sans", freesans, clean, "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans CJK TC", "Source Han Sans TW", "Noto Sans CJK JP", "Source Han Sans JP", "Noto Sans CJK", "Source Han Sans", "Microsoft YaHei UI", "Microsoft YaHei", DengXian, "Wenquanyi Micro Hei", "ST Heiti", "Droid Sans Fallback", "Microsoft JhengHei", SimSun, sans-serif;
+}
+
+.main .ch .inner h2.chtitle p{
+	font-size: .284em;
+	line-height: 2.2em;
+	opacity: .8;
+}
+
+
+
+.about p{
+	opacity: .8;
+}
+
+
+
+.circle {
+	opacity: .8;
+	width: 120px;
+	height: 120px;
+	position: relative;
+	display: inline-block;
+	margin: 0 30px 30px 0;
+	border-radius: 50%;
+	background: rgba(255,255,255,.3);
+	border: rgba(255,255,255,.3) 3px solid;
+	transition: all .3s ease;
+}
+
+.circle:hover{
+	opacity: 1;
+}
+
+.circle .pie_left, .pie_right {
+	width:120px; 
+	height:120px;
+	position: absolute;
+	top: 0;left: 0;
+}
+
+.circle .left, .right {
+	width:120px; 
+	height:120px;
+	background:rgba(0,0,0,.5);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.circle .pie_right, .right {
+	clip:rect(0,auto,auto,60px);
+}
+
+.circle .pie_left, .left {
+	clip:rect(0,60px,auto,0);
+}
+
+
+.circle .mask {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	text-align: center;
+	color: rgba(255,255,255,.9);
+	font-size: 15px;
+	padding-top: 35px;
+	line-height: 1.8em;
+}
+
+.circle .mask p{
+	font-size: 16px;
+}
+
+.circle p.describe{
+	position: absolute;
+	bottom: -30px;
+	padding-top: 10px;
+	height: 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	font-style: italic;
+	opacity: .8;
+}
+
+
+.find .link{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin: 0 25px 30px 0;
+	color: #fff;
+	text-align: center;
+	opacity: .6;
+	transition: all .3s ease;
+}
+
+.find .link:hover{
+	opacity: 1;
+}
+
+.find .link i{
+	display: block;
+	width: 80px;
+	height: 60px;
+	font-size: 60px;
+}
+
+.find .link span{
+	height: 20px;
+	line-height: 20px;
+	width: 100%;
+	font-size: 13px;
+}
+
+.friend ul{
+	padding-top: 28px;
+}
+
+.friend ul a{
+	color: #fff;
+}
+
+.friend ul li{
+	list-style: none;
+	float: left;
+	width: 250px;
+	height: 80px;
+	padding: 5px;
+	opacity: .8;
+	transition: all .3s ease;
+}
+
+.friend ul li:hover{
+	background: rgba(255,255,255,.25);
+	opacity: 1;
+}
+
+.friend ul li i{
+	display: inline-block;
+	float: left;
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 35px;
+	margin: 10px;
+	transition: all .8s ease;
+}
+
+.friend ul li:hover i{
+	border-radius: 100%;
+	background: rgba(255,255,255,.5);
+	color: rgba(0,0,0,.5);
+}
+
+.friend ul li h5{
+	font-size: 17px;
+	font-weight: normal;
+	padding-top: 12px;
+}
+
+.friend ul li p{
+	font-size: 13px;
+	opacity: .7;
+}
+
+
+@media (max-width: 650px) { 
+	body{
+		font-size: 13px;
+	}
+	.nav{
+		top: 2%;
+		right: 2%;
+		width: 100%;
+		height: 26px;
+		opacity: 1;
+	}
+	.nav .linkbox{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.nav .me{
+		margin-top: 35px;
+	}
+	.nav .me img {
+		width: 40px;
+		height: 40px;
+	}
+	.nav .me h3{
+		padding-top: 0;
+		font-size: 17px;
+	}
+	.main .ch .inner{
+		padding: 5% 10% 15% 5%;
+	}
+	.main .ch .inner h2.chtitle {
+		font-size: 35px;
+	}
+	.find .link i{
+		font-size: 40px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.friend ul li{
+		height: 65px;
+		width: 46%;
+	}
+
+	.friend ul li i{
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		font-size: 25px;
+	}
+	.friend ul li h5{
+		font-size: 14px;
+		padding-top: 5px;
+	}
+	.friend ul li p{
+		font-size: 12px;
+		line-height: 1.5em;
+	}
+}
