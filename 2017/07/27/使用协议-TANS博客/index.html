@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.0 -->
+    <script>
+        window.materialVersion = "1.5.0"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+    <link rel="dns-prefetch" href="https://busuanzi.ibruce.info"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Title -->
+    
+    <title>
+        
+            使用协议-TANS博客 | 
+        
+        TANS博客，分享快乐
+    </title>
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="theme-color" content="#555555">
+    <meta name="author" content="零式的天空">
+    <meta name="description" itemprop="description" content="由TANS搭建的个人博客，在这里TANS会分享他的TANS的音乐，软件，教程，TANS网名为东少DTans兵/零式的天空/Tans">
+    <meta name="keywords" content="TANS博客,T,A,N,S,I,C,E,ICE,tans,分享,软件,音乐,教程,协议修改 协议 请遵守">
+    <meta name="shenma-site-verification" content="6abfec9e8444da673204442b7fc74e50_1500709977">
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"http://tans.cf/img/TANSb.png","bdStyle":"1","bdSize":"16"},"slide":{"type":"slide","bdImg":"5","bdPos":"right","bdTop":"118.5"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+    <script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/TANSb.png">
+    <link rel="icon" sizes="192x192" href="/img/TANSb.png">
+    <link rel="apple-touch-icon" href="/img/TANSb.png">
+
+    <!--iOS -->
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="TANS博客，分享快乐">
+
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="3Okgq2M4Ffzg9HPR_uHA2GSbnhzF6XHVVIPWqXFAe6M" />
+    <meta name="baidu-site-verification" content="3F9HyRCiHj" />
+
+    <!-- RSS -->
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.en.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #0F0F0F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #555555 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #555555 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #555555 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #0F0F0F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(https://tans.cf/img/pic_3.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icon -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://tans.cf">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="使用协议-TANS博客 | TANS博客，分享快乐">
+    <meta property="og:image" content="https://tans.cf/img/TANSb.png" />
+    <meta property="og:description" content="由TANS搭建的个人博客，在这里TANS会分享他的TANS的音乐，软件，教程，TANS网名为东少DTans兵/零式的天空/Tans">
+    <meta property="og:article:tag" content="协议修改 协议 请遵守"> 
+
+    
+        <meta property="article:published_time" content="Thu Jul 27 2017 12:07:25 GMT+0800" />
+        <meta property="article:modified_time" content="Sun Oct 01 2017 18:54:52 GMT+0800" />
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:title" content="使用协议-TANS博客 | TANS博客，分享快乐">
+    <meta name="twitter:description" content="由TANS搭建的个人博客，在这里TANS会分享他的TANS的音乐，软件，教程，TANS网名为东少DTans兵/零式的天空/Tans">
+    <meta name="twitter:image" content="https://tans.cf/img/TANSb.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://tans.cf" />
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://tans.cf/2017/07/27/使用协议-TANS博客/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://tans.cf/2017/07/27/使用协议-TANS博客/index.html",
+    "headline": "使用协议-TANS博客",
+    "datePublished": "Thu Jul 27 2017 12:07:25 GMT+0800",
+    "dateModified": "Sun Oct 01 2017 18:54:52 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "零式的天空",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/tx.jpg"
+        },
+        "description": "TANS博客，分享TANS的音乐，软件，教程"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "TANS博客，分享快乐",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/TANSb.png"
+        }
+    },
+    "keywords": ",协议修改 协议 请遵守TANS博客,T,A,N,S,I,C,E,ICE,tans,分享,软件,音乐,教程",
+    "description": "由TANS搭建的个人博客，在这里TANS会分享他的TANS的音乐，软件，教程，TANS网名为东少DTans兵/零式的天空/Tans",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+        <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1262916204&web_id=1262916204" language="JavaScript"></script>
+</div>
+    
+
+    <!-- Custom Head -->
+    
+	
+	
+	
+		<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?bf52bd3863800b63ac9c5dc70f096006";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"TANS博客，分享快乐","bdMini":"2","bdMiniList":false,"bdPic":"https://tans.cf/img/TANSb.png","bdStyle":"1","bdSize":"16"},"slide":{"type":"slide","bdImg":"2","bdPos":"right","bdTop":"100"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<body>	
+	<script>
+(function(){
+   var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?0d6eaa89db61ed87bea1e7cc08a954e9":"https://jspassport.ssl.qhimg.com/11.0.1.js?0d6eaa89db61ed87bea1e7cc08a954e9";
+   document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=62142103" charset="UTF-8"></script>
+
+<head>
+<meta property="wb:webmaster" content="1a0c3e47f66d1901" />
+<meta name="shenma-site-verification" content="6abfec9e8444da673204442b7fc74e50_1500830081"> 
+
+</head>
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://tans.cf/img/1.jpg)">
+    
+            <p class="article-headline-p">
+                使用协议-TANS博客
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/tx.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>零式的天空</strong>
+        <span>Jul 27, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">Read this article on other devices</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACa0lEQVR42u3aQZLbMAwEQP//08kDEsszIEVrt5only2JbB0IGsDrz68eLzw8PDw8PDw8vIfxXvG4vv4/0/xz17tfr7/J14aHh4d3kvdhqy2X8m5xydOur4zWhoeHh3eQly+o3frfzZI/s3hZeHh4eA/j5fj83pyKh4eH93N514trA0weWvDw8PCexju5uc9SvbfnWvDw8PBiXlsAO/n5C/U9PDw8vEte3dJUTp8ngm9pusLDw8O7gTdLoa60TCXJhSIMzP4x4OHh4S3zkomTu5L0xK55316Dh4eHdzNvtrm37CT524aBOhmBh4eHdzMvLz6tJGfb4tZSrgUPDw9vE2/XdjxLbcwO3B/mwsPDw7uZl4eE6wN3nrrNn9ymIfDw8PDO8NYPxDNeHn7qIISHh4f3Vd5KEmGlPev6cL8tMODh4eGNeLPCVX7Nh2JVGSqihAgeHh7eEV5bgmrx7a9JyMHDw8P7Fm+pvSlPrY6oecjBw8PDO8lbCQzt4XjWWNC2XuHh4eGd5O1KGbSJ2tkBvQ4MeHh4eJt47XG2bQVYKmXt7cbFw8PD28RrmwDWUwxtijYPCXh4eHjneSvH5SQwtKElb1bAw8PDO8l7jUZ+aJ4VtPKXgoeHh3ee147ZRp+nhvPwsKF1AA8PD2/EmwWD9bLZjL1UAMPDw8PbykuCQR4k8pRrO1f0WvHw8PAO8trmpzYxsZ78XQoMeHh4eF/iXbcFrJS78md+CC14eHh4j+Rt3srjIDGs7+Hh4eHdxmubsdpXsK05AA8PD+8BvFmjVfuEtjFr+Orx8PDwbub9voGHh4eHh4eHh/eA8RcZWMldhqn5gQAAAABJRU5ErkJggg==">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/协议修改-协议-请遵守/">协议修改 协议 请遵守</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/2017/07/27/使用协议-TANS博客/" class="leancloud-views_num" data-flag-title="使用协议-TANS博客">
+     &nbsp;Views
+</span>
+
+            </li>
+        </a>
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;Views
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=使用协议-TANS博客&url=https://tans.cf/2017/07/27/使用协议-TANS博客/index.html&pic=https://tans.cf/img/TANSb.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Weibo
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=使用协议-TANS博客&url=https://tans.cf/2017/07/27/使用协议-TANS博客/index.html&via=零式的天空" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://tans.cf/2017/07/27/使用协议-TANS博客/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://tans.cf/2017/07/27/使用协议-TANS博客/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://tans.cf/2017/07/27/使用协议-TANS博客/index.html&title=使用协议-TANS博客" target="_blank">
+            <li class="mdl-menu__item">
+                Share to LinkedIn
+            </li>
+        </a>
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=TANS博客，分享快乐&title=使用协议-TANS博客&summary=由TANS搭建的个人博客，在这里TANS会分享他的TANS的音乐，软件，教程，TANS网名为东少DTans兵/零式的天空/Tans&pics=https://tans.cf/img/TANSb.png&url=https://tans.cf/2017/07/27/使用协议-TANS博客/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://tans.cf/2017/07/27/使用协议-TANS博客/index.html&text=使用协议-TANS博客" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Telegram
+            </li>
+        </a>
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>用户注册及使用APP隐私协议</p>
+<p>TANS博客（以下简称“博客”）在此特别提醒您（用户）在注册成为用户之前，请认真阅读本《用户协议》（以下简称“协议”），确保您充分理解本协议中各条款。请您审慎阅读并选择接受或不接受本协议。除非您接受本协议所有条款，否则您无权注册、登录或使用本协议所涉服务。您的注册、登录、使用等行为将视为对本协议的接受，并同意接受本协议各项条款的约束。</p>
+<p>一、本协议约定博客与用户之间关于“博客”软件服务（以下简称“服务”）的权利义务。“用户”是指注册、登录、使用本服务的个人。本协议可由博客随时更新，更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知，用户可在本APP中查阅最新版协议条款。在修改协议条款后，如果用户不接受修改后的条款，请立即停止使用博客提供的服务，用户继续使用博客提供的服务将被视为接受修改后的协议。 </p>
+<p>二、除非你已阅读并接受本协议所有条款，否则你无权下载、安装或使用本软件及相关服务。你的下载、安装、使用、获取微信帐号、登录等行为即视为你已阅读并同意上述协议的约束。</p>
+<p>三、使用规范<br>1、博客帐号的所有权归TANS博客所有，用户完成申请注册手续后，仅获得博客平台帐号的使用权，博客将给予每个用户一个用户帐号及相应的密码，该使用权仅属于初始申请注册人。同时，初始申请注册人不得赠与、借用、租用、转让或售卖微信帐号或者以其他方式许可非初始申请注册人使用该帐号。非初始申请注册人不得通过受赠、继承、承租、受让或者其他任何方式使用该帐号。用户应当对以其用户帐号进行的所有活动和事件负法律责任。<br>2、用户须对在博客的注册信息的真实性、合法性、有效性承担全部责任，如因注册信息作假或非真实性而导致你在使用博客平台服务过程中产生任何损失的，应由你个人完全独自承担。<br>3、用户不得冒充他人；不得利用他人的名义发布任何信息；不得恶意使用注册帐号导致其他用户误认；否则博客有权立即停止提供服务，收回其帐号并由用户独自承担由此而产生的一切法律责任。<br>4、用户注册博客帐号后如果长期不登录该帐号，博客有权回收该帐号，以免造成资源浪费，由此带来的任何损失均由用户自行承担。<br>5、用户直接或通过各类方式（如 RSS 源和站外 API 引用等）间接使用博客服务和数据的行为，都将被视作已无条件接受本协议全部内容；若用户对本协议的任何条款存在异议，请停止使用博客所提供的全部服务。<br>6、博客是一个信息分享、传播及获取的平台，用户通过博客发表的信息为公开的信息，其他第三方均可以通过博客获取用户发表的信息，用户对任何信息的发表即认可该信息为公开的信息，并单独对此行为承担法律责任；任何用户不愿被其他第三人获知的信息都不应该在博客上进行发表。<br>7、用户承诺不得以任何方式利用博客直接或间接从事违反中国法律、以及社会公德的行为，博客有权对违反上述承诺的内容予以删除。<br>8、用户不得利用博客服务制作、上载、复制、发布、传播或者转载包括但不限于任何违反国家规定之内容，如下：<br>(1)反对宪法所确定的基本原则的行为；<br>(2)危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；<br>(3)损害国家荣誉和利益的；<br>(4)煽动民族仇恨、民族歧视，破坏民族团结的；<br>(5)破坏国家宗教政策，宣扬邪教和封建迷信的；<br>(6)散布谣言，扰乱社会秩序，破坏社会稳定的；<br>(7)散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；<br>(8)侮辱或者诽谤他人，侵害他人合法权益的；<br>(9)侵害他人知识产权、商业秘密等合法权利的行为；<br>(10)恶意虚构事实、隐瞒真相以误导、欺骗他人的行为；<br>(11)发布、传送、传播不良广告信息及垃圾信息；<br>(12)删除、隐匿、改变本服务显示或其中包含的任何专利、著作权、商标或其他所有权声的；<br>(13)以任何方式干扰或企图干扰博客app产品、任何部分或功能的正常运行，或者制作、发布、传播上述工具、方法等；<br>(14)含有法律、行政法规禁止的其他内容的信息。<br>9、你应对通过本服务了解、接收或可接触到的包括但不限于其他用户在内的任何人的个人信息予以充分尊重，你不应以搜集、复制、存储、传播或以其他任何方式使用其他用户的个人信息，否则，由此产生的后果由你自行承担。<br>10、博客有权对用户使用博客的情况进行审查和监督，如用户在使用博客时违反任何上述规定，博客或其授权的人有权要求用户改正或直接采取一切必要的措施（包括但不限于更改或删除用户张贴的内容、暂停或终止用户使用博客的权利）以减轻用户不当行为造成的影响。<br>四、账号安全及私隐<br>1、尊重用户个人信息是博客的一项基本原则，博客将通过技术手段、强化内部管理等办法充分保护用户的个人隐私信息。除法律或有法律赋予权限的政府部门要求或事先得到用户明确授权等原因外，博客保证不对外公开或向第三方透露用户个人隐私信息。<br>2、你在注册帐号或使用本服务的过程中，需要提供一些必要的信息，例如：为向你提供帐号注册服务或进行用户身份识别，需要你填写手机号码；定位功能需要你同意使用你所在的地理位置信息；若国家法律法规或政策有特殊规定的，你需要提供真实的身份信息。若你提供的信息不完整，则无法使用本服务或在使用过程中受到限制。<br>3、用户同意为提高用户体验，博客在线可在以下事项中使用用户的个人隐私信息：<br>(1)向用户及时发送重要通知，如软件更新、本协议条款的变更等；<br>(2)博客在线内部进行审计、数据分析和研究等，以改进博客在线的产品、服务和与用户之间的沟通；<br>(3)依本协议约定，博客在线管理、审查用户信息及进行处理措施。<br>4、你理解并同意：本软件的某些功能可能会让第三方知晓用户的信息，例如：用户的博客好友可以查询用户头像、名字、帐号或发表的内容等可公开的个人资料；用户关注博客品牌方账号后将有可能成为品牌方帐号关注用户，品牌方帐号可以根据其功能权限获取关注用户头像、名字、博客帐号、消息评论内容、图片、视频等信息，并可通过品牌方用户平台发送消息与关注用户进行互动。关注用户的消息评论内容、向博客号上传的图片、视频都可以被具备相应功能权限的品牌方帐号所使用，供第三方查阅。<br>5、你理解并同意博客将会尽其商业上的合理努力保障你在本软件及服务中的数据存储安全，但是，博客并不能就此提供完全保证，包括但不限于以下情形：<br>(1)博客不对你在本软件及服务中相关数据的删除或储存失败负责；<br>(2)博客有权根据实际情况自行决定单个用户在本软件及服务中数据的最长储存期限，并在服务器上为其分配数据最大存储空间等。你可根据自己的需要自行备份本软件及服务中的相关数据；<br>(3)如果你停止使用本软件及服务或服务被终止或取消，博客可以从服务器上永久地删除你的数据。服务停止、终止或取消后，博客没有义务向你返还任何数据。<br>(4)用户在使用本软件及服务时，须自行承担如下来自博客不可掌控的风险内容，包括但不限于：<br>1.由于不可抗拒因素可能引起的个人信息丢失、泄漏等风险；<br>2.用户在使用本软件访问第三方网站时，因第三方网站及相关内容所可能导致的风险，由用户自行承担；<br>3.用户发布的内容被他人转发、分享，因此等传播可能带来的风险和责任；<br>4.由于无线网络信号不稳定、无线网络带宽小等原因，所引起的腾讯微信登录失败、资料同步不完整、页面打开速度慢等风险。<br>五、T币的换取及使用<br>1、用户参与博客平台将有机会获得T币的点数，每个点数代表相应的现金额，用户可以用获得的T币来兑换现金的或其他等值服务。<br>2、用户在使用博客的过程中，如累计T币的点数数量出现错误，应于7个工作日与博客平台取得联系并提出修改，否则博客不承担相关责任。由此产生的纠纷及诉讼与博客无关。<br>3、如用户采用擅自更改博客程序或通过刷机刷量等违法技术手段造假、邀请虚假用户或在没有充分告知其他潜在用户的情况下使得该潜在用户虽然安装了博客但没有正常使用行为的或使用黑客手段攻击博客在线服务器等不正当手段来获取T币， 博客视其为用户作弊行为而有权取消该用户资格并删除该用户所有T币， 并保留对攻击博客服务器等黑客行为追究法律责任的权利。<br>4、对于违反本协议任何规定的用户或长期不运行博客的用户（非活跃用户）所获得T币点数，博客有权对其点数自动被清零。 长期不运行指自最后一次登录使用博客开始6个月或以上时间没有运行的用户。由此产生的纠纷及诉讼与博客无关。<br>六、举报行为<br>1、如果个人或单位发现博客上存在侵犯自身合法权益或任何违反平台规定包括但不限于色情、暴力、恐怖谣言等内容（以下简称“内容”），请与博客取得联系。为了保证问题能够及时有效地处理，请务必提交真实有效、完整清晰的材料，否则不予受理。<br>2、应充分、明确地描述所举办的内容，提供涉嫌内容在博客上的具体页面、文字或图片，指明涉嫌内容中的哪些内容具体有哪些问题点；<br>3、举报人应提供具体的联络信息，包括姓名、身份证或护照复印件（对自然人）、通信地址、电话号码、电子邮件；<br>4、如果本举报内容不完全属实，本人将承担由此产生的一切法律责任。<br>5、出于网络社区的监督属性，并非所有举报申请都必须受理。知乎自收到举报邮件七个工作日内处理完毕并给出回复。处理期间，不提供任何电话、邮件及其他方式的查询服务。<br>七、服务的变更、中断、终止<br>1、因设备维修或更换、故障和通信中断等技术原因而中断业务，博客可视情况事前或事后通知用户；<br>2、如因博客临时中断业务而导致用户T币数据丢失，博客会给予丢失数据的用户相应的点数补偿， 具体补偿点数数量由博客最终决定。但因不可抗力因素导致的业务中断发生时，博客有权不给予用户补偿；<br>3、如因博客公司包括但不限于业务停止、公司倒闭、结业、自然灾害等情况导致无法继续为用户提供平台服务，导致T币点数无法正常兑换现金金额的，博客有权于公司停止运营日起无需向用户兑换T币点数现金金额；<br>4、当博客用户发生如下情况时，博客可单方面终止本协议，取消用户继续使用博客产品及服务的资格：<br>(1)用户死亡；<br>(2)盗用他人的个人信息或手机；<br>(3)注册用户时提供虚假信息；<br>(4)以非法手段（包括且不限于黑客攻击等）来积累或使用T币；<br>(5)妨碍其他用户的正常使用；<br>(6)伪称是博客的工作人员或管理人员；<br>(7)擅自强行更改博客的计算机系统，或威胁侵入系统；<br>(8)擅自传播谣言，用各种手段来毁损博客的名誉与妨碍博客的正常营业；<br>(9)未经博客同意，利用博客的产品及服务散播谣言或发送广告；<br>(10)其他违反本协议的行为及违法行为；<br>(11)用户如因上述第（1）条原因而被取消用户资格，用户法定财产继承人可在用户资格被取消之日起30个工作日内向博客提交相关证明与提出书面申请，将该用户剩余T币转移至自己的博客账号下， 否则博客有权删除该用户剩余T币。<br>八、免责条款<br>1、博客的服务中有可能包括广告，用户同意在使用过程中显示博客与第三方供应商、 合作伙伴提供的广告。除法律法规明确规定外，用户应自行对依该广告信息进行的交易负责， 对用户因依该广告信息进行的交易或前述广告商提供的内容而遭受的任何损失或伤害，博客不承担任何责任。<br>2、博客不能对用户发表的评论或任何图文的正确性进行保证。<br>3、用户在博客发表的内容仅表明其个人的立场和观点，并不代表博客的立场或观点。作为内容的发表者，需自行对所发表内容负责，因所发表内容引发的一切纠纷，由该内容的发表者承担全部法律及连带责任。博客不承担任何法律及连带责任。<br>4、博客不保证网络服务一定能满足用户的要求，也不保证网络服务不会中断，对网络服务的及时性、安全性、准确性也都不作保证。<br>5、对于因不可抗力或博客不能控制的原因造成的网络服务中断或其它缺陷，博客不承担任何责任，但将尽力减少因此而给用户造成的损失和影响。<br>6、如博客发现或收到他人举报或投诉用户违反本协议约定的，博客有权不经通知随时对相关内容进行删除、屏蔽，并视行为情节对违规帐号处以包括但不限于警告、限制或禁止使用部分或全部功能、帐号封禁直至注销的处罚，并公告处理结果。<br>7、你理解并同意，博客有权依合理判断对违反有关法律法规或本协议规定的行为进行处罚，对违法违规的任何用户采取适当的法律行动，并依据法律法规保存有关信息向有关部门报告等，用户应独自承担由此而产生的一切法律责任。<br>8、你理解并同意，因你违反本协议或相关服务条款的规定，导致或产生第三方主张的任何索赔、要求或损失，你应当独立承担责任；博客因此遭受损失的，你也应当一并赔偿。<br>九、协议修改<br>1、根据互联网的发展和有关法律、法规及规范性文件的变化，或者因业务发展需要，博客有权对本协议的条款作出修改或变更，一旦本协议的内容发生变动，博客将会直接在博客平台公布修改之后的协议内容，该公布行为视为博客已经通知用户修改内容。博客也可采用电子邮件或私信的传送方式，提示用户协议条款的修改、服务变更、或其它重要事项。<br>2、如果不同意博客对本协议相关条款所做的修改，用户有权并应当停止使用博客。如果用户继续使用博客，则视为用户接受博客对本协议相关条款所做的修改。<br>十、感谢你对博客的支持与理解！我们将尽最大的可能让你有最好的服务体验。</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <div id="comment" class="comment"></div>
+<script>
+    window.onload = function() {
+        new Valine({
+            av: AV, // source from av-min.js
+            el: '.comment',
+            app_id: "QYmr6rjJzNr7rXG72eWacoJV-gzGzoHsz",
+            app_key: "eqWOfdCufbK3L8t5Dzcyts2r",
+            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+        });
+    }
+</script>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/07/29/打赏/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/07/24/欢乐斗地主UWP-第三方/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.jpg);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/tx.jpg" alt="零式的天空's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        零式的天空
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: LOVE@TANS.CF" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                Home
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    Archives
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/08/">August 2017<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/07/">July 2017<span class="sidebar_archives-count">19</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">January 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/1999/10/">October 1999<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="https://tans.cf/timeline" title="时光轴">
+                
+                    <i class="material-icons sidebar-material-icons">timeline</i>
+                
+                时光轴
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://tans.cf/bc/index.html" title="一步一步编程计划">
+                
+                    <i class="material-icons sidebar-material-icons">done</i>
+                
+                一步一步编程计划
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://tans.cf/weliao/index.html" title="微聊网页版">
+                
+                    <i class="material-icons sidebar-material-icons">chat</i>
+                
+                微聊网页版
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://tans.cf/gallery" title="图片库">
+                
+                    <i class="material-icons sidebar-material-icons">photo</i>
+                
+                图片库
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://tans.cf/tags" title="标签云">
+                
+                    <i class="material-icons sidebar-material-icons">stars</i>
+                
+                标签云
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://tans.cf/links" title="友情链接">
+                
+                    <i class="material-icons sidebar-material-icons">link</i>
+                
+                友情链接
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://app.tans.cf/" title="APP客户端">
+                
+                    <i class="material-icons sidebar-material-icons">android</i>
+                
+                APP客户端
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://tans.cf/name/index.html" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+        <li>
+            <a href="https://hao.tans.cf/index.html" title="T23导航">
+                
+                T23导航
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://jm.tans.cf/" title="TANS解码">
+                
+                TANS解码
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://vip.tans.cf/" title="赞助我们">
+                
+                赞助我们
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://video.tans.cf/" title="VIP视频解析">
+                
+                VIP视频解析
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="https://vip.tans.cf/index2.html" title="赞助榜单">
+                
+                赞助榜单
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                Number of articles
+                <span class="sidebar-badge">28</span>
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/TANS0008" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+        <a href="https://www.facebook.com/tansice.ds" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-facebook">
+                <span class="visuallyhidden">Facebook</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+        <a href="http://www.weibo.com/DSTansice" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-weibo">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+        <a href="https://www.instagram.com/dstansice/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-instagram">
+                <span class="visuallyhidden">Instagram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;2017&nbsp;-<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>TANS博客，分享快乐
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="http://www.weibo.com/DSTansice" target="_blank" class="footer-develop-a">TANS</a></div>
+                <div class="footer-develop-div">Theme - <a href="http://tans.cf" target="_blank" class="footer-develop-a">TANS博客</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+
+    <script>lsloader.load("js/lazyload.min.js","https://tans.cf/js/lazyload.min.js", true)</script>
+    <script>lsloader.load("js/js.min.js","https://tans.cf/js/js.min.js", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+    <!-- Leancloud -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize('QYmr6rjJzNr7rXG72eWacoJV-gzGzoHsz', 'eqWOfdCufbK3L8t5Dzcyts2r');
+    </script>
+    <script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+
+    <!-- Busuanzi -->
+    <script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/valine@1.1.1/dist/Valine.min.js"></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Window Load-->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Bing Background -->
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.4.0 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
